@@ -1,0 +1,14 @@
+const newArr = new Array();
+
+function detectWord(string){
+  const length = string.length;
+  const nonLowercaseLetters = /[^a-z]/g;
+  for(let i=0;i<length;i++){
+    const testChar = string.charAt(i)
+    if(!nonLowercaseLetters.test(testChar)){
+       newArr.push(testChar);
+       }
+  }
+}
+const a = detectWord('HcaJt');
+console.log(newArr.join(''));

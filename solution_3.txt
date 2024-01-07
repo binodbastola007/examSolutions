@@ -1,0 +1,7 @@
+function matchHouses(value){
+  if(value===1){
+    return 6;
+  }
+   return (value*5)+1
+}
+matchHouses(87);
